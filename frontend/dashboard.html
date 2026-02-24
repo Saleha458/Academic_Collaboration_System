@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Academic Collaboration System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body id="dashboard-bg">
+    <div class="top-bar">
+        <h2>Academic Collaboration System</h2>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+    <div class="glass-card-white">
+        <h1 class="dashboard-heading-black">Student Performance Analytics</h1>
+        
+        <div class="selection-row">
+            <select id="sid"><option value="">Select Student ID</option></select>
+            <select id="gen">
+                <option value="">Select Gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            <select id="edu">
+                <option value="">Select Education</option>
+                <option value="bsc">BSc</option>
+                <option value="msc">MSc</option>
+                <option value="phd">PhD</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-ai-vibrant" onclick="getAI()">AI Analytics</button>
+            <button class="btn-group-vibrant" onclick="getGroup()">Group Study</button>
+            <button class="btn-graph-vibrant" onclick="getGraph()">Performance Graph</button>
+        </div>
+
+        <div id="output"></div>
+
+        <div id="chartDiv" class="chart-container" style="display:none;">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

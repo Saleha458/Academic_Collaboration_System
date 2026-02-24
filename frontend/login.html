@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - ACS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+    <div class="auth-card">
+        <h1 class="main-title">Academic Collaboration System</h1>
+        <p class="sub-title">Student Portal Login</p>
+        
+        <input type="text" id="loginUser" placeholder="Username">
+        <input type="password" id="loginPass" placeholder="Password">
+        
+        <button class="btn-login-navy" onclick="handleLogin()">LOGIN</button>
+        <button class="btn-register-vibrant" onclick="window.location.href='register.html'">GO TO REGISTER</button>
+        
+        <p id="msg" style="color:red; margin-top:15px;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
